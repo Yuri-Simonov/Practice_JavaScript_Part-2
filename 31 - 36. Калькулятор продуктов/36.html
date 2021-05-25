@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" type="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Виселица</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		@@include("_header.html")
+
+		<main>
+			<div id="parent">
+				<div id="form">
+					<input id="name" placeholder="название">
+					<input id="price" placeholder="цена">
+					<input id="amount" placeholder="количество">
+					<input id="add" type="button" value="добавить">
+				</div>
+
+				<h2>Таблица продуктов:</h2>
+				<table id="table">
+					<tr>
+						<th>название</th>
+						<th>цена</th>
+						<th>кол-во</th>
+						<th>сумма</th>
+						<th>удалить</th>
+					</tr>
+				</table>
+				<div id="result">
+					общий итог: <span id="total">0</span>
+				</div>
+			</div>
+		</main>
+
+		@@include("_footer.html")
+	</div>
+	<script src="js/script.min.js"></script>
+
+</body>
+
+</html>

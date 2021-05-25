@@ -1,0 +1,25 @@
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.container {
+	max-width: 1000px;
+	height: 400px;
+	margin: 0 auto;
+}
+* {
+	box-sizing: border-box;
+}
+.right {
+	border: 1px solid green;
+}
+.wrong {
+	border: 1px solid red;
+}
+#button {
+	margin-top: 15px;
+}

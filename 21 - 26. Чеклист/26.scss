@@ -1,0 +1,48 @@
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.container {
+	max-width: 1000px;
+	height: 400px;
+	margin: 0 auto;
+}
+body {
+	text-align: center;
+}
+#input,
+#list {
+	display: block;
+}
+#list {
+	padding: 0;
+	list-style-type: none;
+}
+#list span {
+	margin-right: 5px;
+}
+.mark {
+	color: green;
+	cursor: pointer;
+}
+.remove {
+	color: red;
+	cursor: pointer;
+}
+#list .remove:hover,
+#list .mark:hover {
+	text-decoration: underline;
+}
+#input {
+	width: 300px;
+}
+#list .done .task {
+	text-decoration: line-through;
+}
+.task {
+	cursor: pointer;
+}
